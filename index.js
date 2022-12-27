@@ -7,7 +7,7 @@ const fs = require('fs');
 
 // TO-DO create write file function
 
-// TO-DO create a smaple ReadMe for project
+// TO-DO create a sample ReadMe for project
 
-// TO-DO create a a walkthrough video for when project is done
+// TO-DO create a walkthrough video for when project is done
 
