@@ -2,12 +2,29 @@
 // includes the inquirer package to capture user input
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TO-DO create prompts
+// TODO: Create an array of questions for user input
+const questions = [
+{
+type: 'input',
+name: 'name',
+message: 'Welcome to the perfect README generator! What is your full name:',
 
-// TO-DO create write file function
+}
 
-// TO-DO create a sample ReadMe for project
 
-// TO-DO create a walkthrough video for when project is done
+
+];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
+// TODO: Create a function to initialize app
+function init() {
+    return inquirer.prompt(questions);
+}
+
+// Function call to initialize app
+init();
 
