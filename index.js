@@ -9,6 +9,11 @@ console.log("Ready to make the perfect README!");
 const questions = [
   {
     type: "input",
+    name: "name",
+    message: "What is your name:",
+  },
+  {
+    type: "input",
     name: "title",
     message: "Lets start with the title:",
   },
