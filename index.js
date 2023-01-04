@@ -3,6 +3,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
+// Opening Statement/Introduction
 console.log("Ready to make the perfect README!");
 
 // TODO: Create an array of questions for user input
@@ -80,7 +81,7 @@ function writeToFile(fileName, data) {
     if (err) {
       return console.log(err);
     }
-    console.log("Congrats! The ReadMe file was successfully created!");
+    console.log("Congrats! The Perfect ReadMe file was successfully created!");
   });
 }
 
