@@ -6,7 +6,7 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 // Opening Statement/Introduction
 console.log("Ready to make the perfect README!");
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
   {
     type: "input",
@@ -61,6 +61,8 @@ const questions = [
       "Unlicense",
       "none",
     ],
+    // Made MIT the default option since it's more common,
+    // but users still get an option to select other licenses
     default: "MIT",
   },
   {
@@ -75,17 +77,18 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// This function writes a README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
       return console.log(err);
     }
+    // Success message if File is created
     console.log("Congrats! The Perfect ReadMe file was successfully created!");
   });
 }
 
-// TODO: Create a function to initialize app
+// This function initializes app
 function init() {
   return inquirer.prompt(questions).then(function (userInput) {
     console.log(userInput);
