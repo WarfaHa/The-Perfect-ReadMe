@@ -21,6 +21,9 @@ You would use this generator to save time building a README file from scratch by
 They can create pull requests and request to become contributers to this project
 ## Tests
 I will include a gif on how this project works, but you you can test it via the terminal by answering the questions and generating the README file
+
+![GIF-of-README](./README-GIF.gif)
+
 ## Licenses
      To view the MIT license. Click the license button above.
 ## Contact
